@@ -3,7 +3,7 @@
 ## Not yet tested
 - **Calls, SMS, mobile data with a SIM.** The modem is ONLINE and RIL reports the baseband and both SIM slots,
   but no SIM has been tested yet. Reports are very welcome.
-- GPS fix outdoors, fingerprint enrolment, MTP, FM radio, VoLTE.
+- GPS fix outdoors, MTP, FM radio, VoLTE.
 - Widevine with a real streaming app (expected level: L3).
 
 ## Open

@@ -41,7 +41,7 @@ Installation: [docs/FLASHING.md](docs/FLASHING.md). **Back up everything you nee
 | Sensors, GPS service | ✅ | GPS fix not yet tested outdoors |
 | Widevine | ✅* | service runs and reports support (L3 expected); not tested with a streaming app |
 | microG | ✅ | signature spoofing passes microG self-check |
-| Fingerprint | ❓ | HAL starts, enrolment untested |
+| Fingerprint | — | the ATU-L21 has no fingerprint sensor |
 | SELinux enforcing | ❌ | permissive only (vendor policy is 8.0) |
 | Root | — | not included; Magisk planned |
 
