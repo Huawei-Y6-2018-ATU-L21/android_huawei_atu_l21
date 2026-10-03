@@ -6,7 +6,7 @@ boot animation, or no boot at all. No logs were taken. Lesson: without logs ever
 
 ## Attempt 1 — phh v123 (Android 9, A-only): boots
 Flash `system`, format data in TWRP, boot. Display, touch, sound, Wi-Fi, Bluetooth, sensors and both cameras
-worked; fingerprint HAL missing. Conclusion: the device is fine — earlier failures were procedure and Android version.
+worked. Conclusion: the device is fine — earlier failures were procedure and Android version.
 
 ## Attempt 2 — phh v222 (Android 10, A-only): crash loop
 `vold: Unable to find device keyring` → FBE keys not installed → `system_server` loop → recovery.
