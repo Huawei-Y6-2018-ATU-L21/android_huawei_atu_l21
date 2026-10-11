@@ -44,5 +44,10 @@ wifi-system, GNSS manifest. Then Huawei BFM (eRecovery after 10 min) and a stuck
 | v9 | preinstalled apps (not released) |
 | v10 | Jelly + WebView 154, F-Droid at first boot (vanilla) — **first public release** |
 
+## LineageOS 17.1 (Android 10)
+A second ROM built on the attempt-3 finding: LineageOS 17.1 with the stock 8.0 ramdisk and FBE disabled. New on the
+way: the Huawei 8.0 init never reads `/system/build.prop` (tested with a marker property), so build.prop is appended to
+`prop.default`. See [LINEAGE-17.1.md](LINEAGE-17.1.md). Release `lineage-17.1-20261011`.
+
 ## Next
-v11 (VINTF dialog fix), SIM tests, Magisk, newer TWRP, SELinux enforcing; a LineageOS 19.1 base is being considered.
+crDroid (Android 10 and 12) for this phone; Android 12 v11 (VINTF dialog fix), SIM tests, Magisk, newer TWRP.

@@ -15,6 +15,9 @@ reproduce, audit and improve it.
 | Build type | `userdebug`, SELinux **permissive** |
 | Status | daily-usable; see [what works](#what-works) |
 
+> **Also available: [LineageOS 17.1 (Android 10)](docs/LINEAGE-17.1.md)** — unofficial, stock 8.0 ramdisk,
+> SELinux enforcing, optional GApps. Release tag `lineage-17.1-20261011`.
+
 ## Downloads
 
 Get the images from the [Releases](../../releases) page:
@@ -59,15 +62,16 @@ Details: [docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md).
 | [VENDOR-AUDIT.md](docs/VENDOR-AUDIT.md) | Static audit of all 4816 vendor ELFs against Android 12 |
 | [HISTORY.md](docs/HISTORY.md) | How the port progressed (GSIs tried, versions v1–v10) |
 | [KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md) | Open problems and workarounds |
+| [LINEAGE-17.1.md](docs/LINEAGE-17.1.md) | The LineageOS 17.1 (Android 10) build: what differs, install, GApps |
 
 ## Repositories
 
 | Repository | Goes to |
 |---|---|
 | [android_huawei_atu_l21](https://github.com/Huawei-Y6-2018-ATU-L21/android_huawei_atu_l21) | this guide, tools, releases |
-| [atu_l21_patches](https://github.com/Huawei-Y6-2018-ATU-L21/atu_l21_patches) | patches for the AOSP tree + manifest |
-| [android_device_huawei_atu_l21](https://github.com/Huawei-Y6-2018-ATU-L21/android_device_huawei_atu_l21) | `device/atu` |
-| [android_vendor_atu](https://github.com/Huawei-Y6-2018-ATU-L21/android_vendor_atu) | `vendor/atu` |
+| [atu_l21_patches](https://github.com/Huawei-Y6-2018-ATU-L21/atu_l21_patches) | patches for the AOSP tree + manifest (branch `lineage-17.1`: LineageOS 17.1) |
+| [android_device_huawei_atu_l21](https://github.com/Huawei-Y6-2018-ATU-L21/android_device_huawei_atu_l21) | `device/atu` (branch `lineage-17.1` for LineageOS 17.1) |
+| [android_vendor_atu](https://github.com/Huawei-Y6-2018-ATU-L21/android_vendor_atu) | `vendor/atu` (branch `lineage-17.1` for LineageOS 17.1) |
 | [android_kernel_huawei_atu_l21](https://github.com/Huawei-Y6-2018-ATU-L21/android_kernel_huawei_atu_l21) | kernel source (branch `atu-l21-a12`) |
 
 ## Build scripts and tools
@@ -81,7 +85,9 @@ See [docs/DEBUGGING.md](docs/DEBUGGING.md).
 
 - [phhusson / TrebleDroid](https://github.com/phhusson) — the treble GSI base this build stands on
 - [pascua28](https://github.com/pascua28/android_kernel_msm8917_ATU) — the 3.18.140 ATU kernel
-- [LineageOS](https://lineageos.org) — Jelly browser and the Chromium WebView builds
+- [LineageOS](https://lineageos.org) — LineageOS 17.1, Jelly browser and the Chromium WebView builds
+- [AndyYan](https://github.com/AndyCGYan) — `lineage_build_unified` / `lineage_patches_unified` (LineageOS treble builds)
+- [MindTheGapps](https://github.com/MindTheGapps) — GApps package used with the LineageOS 17.1 build
 - [microG](https://microg.org), [Aurora OSS](https://gitlab.com/AuroraOSS), [F-Droid](https://f-droid.org)
 - The Android Open Source Project
 
